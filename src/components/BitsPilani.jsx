@@ -36,6 +36,17 @@ export default function BitsPilani() {
                 loading="lazy"
               />
             )}
+            {item.post && (
+              <iframe
+                className={styles.cardPost}
+                src={item.post}
+                title={`${item.title} — LinkedIn post`}
+                style={{ height: item.postHeight ? `${item.postHeight}px` : '400px' }}
+                frameBorder="0"
+                allowFullScreen
+                loading="lazy"
+              />
+            )}
             {item.link && (
               <a
                 href={item.link}

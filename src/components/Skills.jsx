@@ -14,8 +14,14 @@ export default function Skills() {
     >
       <div className={styles.grid}>
         {skills.map((category) => (
-          <article key={category.group} className={styles.card}>
-            <h3>{category.group}</h3>
+          <article
+            key={category.group}
+            className={`${styles.card} ${category.featured ? styles.featured : ''}`.trim()}
+          >
+            <h3>
+              {category.group}
+              {category.featured && <span className={styles.coreTag}>Core focus</span>}
+            </h3>
             <div className={styles.badges}>
               {category.items.map((item) => (
                 <Badge key={item}>{item}</Badge>

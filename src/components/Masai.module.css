@@ -87,3 +87,21 @@
 .galleryItem:hover {
   transform: scale(1.02);
 }
+
+.posts {
+  margin-top: 1.6rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 504px));
+  justify-content: center;
+  gap: 1.2rem;
+}
+
+.post {
+  width: 100%;
+  max-width: 504px;
+  height: 620px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  background: var(--color-surface);
+}

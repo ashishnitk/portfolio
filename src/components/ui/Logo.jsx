@@ -6,7 +6,7 @@ import styles from './Logo.module.css'
  * Pulls the real logo from the org's favicon and falls back to a
  * clean monogram tile if the image can't be loaded.
  */
-export default function Logo({ name, domain, text, size = 56 }) {
+export default function Logo({ name, domain, text, src, size = 56 }) {
   const [failed, setFailed] = useState(false)
 
   const monogram =
@@ -19,6 +19,21 @@ export default function Logo({ name, domain, text, size = 56 }) {
       .map((word) => word[0])
       .join('')
       .toUpperCase()
+
+  if (!failed && src) {
+    return (
+      <img
+        className={styles.logo}
+        style={{ width: size, height: size }}
+        src={src}
+        alt={`${name} logo`}
+        width={size}
+        height={size}
+        loading="lazy"
+        onError={() => setFailed(true)}
+      />
+    )
+  }
 
   if (!domain || failed) {
     return (

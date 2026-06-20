@@ -24,8 +24,23 @@ export const stats = [
   { value: '12+', label: 'Years in software' },
   { value: '30+', label: 'Cross-functional team' },
   { value: '#1', label: 'MS Global Hackathon' },
-  { value: '6Y 11M', label: 'At Microsoft' },
+  { value: '7+ Years', label: 'At Microsoft' },
 ]
+
+export const achievement = {
+  badge: 'Featured Achievement',
+  title: 'Microsoft Global Hackathon 2024 — Grand Prize Winner',
+  issuer: 'Issued by The Microsoft Garage',
+  description:
+    'Out of 73,000 participants and 20,000+ projects, our team came out on top — earning the chance to present our work to Satya Nadella himself.',
+  highlights: [
+    { value: '73,000', label: 'Participants' },
+    { value: '20,000+', label: 'Projects' },
+    { value: 'Grand Prize', label: 'Winner' },
+  ],
+  link: 'https://www.credly.com/badges/5c386788-32a4-4015-ab81-bc3b1929ba27',
+  linkLabel: 'View credential on Credly',
+}
 
 export const about = {
   heading: 'About me',
@@ -44,16 +59,13 @@ export const about = {
 
 export const skills = [
   {
-    group: 'Frontend',
-    items: ['React', 'TypeScript', 'JavaScript', 'HTML5 & CSS3', 'Angular'],
-  },
-  {
-    group: 'Backend',
-    items: ['C# / .NET', 'ASP.NET Web API', 'Node.js', 'Python', 'REST APIs'],
-  },
-  {
     group: 'AI / ML',
-    items: ['LLM Integration', 'Retrieval (RAG)', 'Learning-to-Rank', 'Chain-of-Thought', 'Azure ML'],
+    featured: true,
+    items: ['LLM Integration', 'Retrieval (RAG)', 'Learning-to-Rank', 'Chain-of-Thought', 'Agentic Systems', 'Azure ML'],
+  },
+  {
+    group: 'Full-Stack',
+    items: ['React', 'TypeScript', 'JavaScript', 'Angular', 'C# / .NET', 'ASP.NET Web API', 'Node.js', 'Python', 'REST APIs', 'HTML5 & CSS3'],
   },
   {
     group: 'Cloud & Data',
@@ -194,7 +206,8 @@ export const experience = [
   },
   {
     org: 'Hexagon AB',
-    logoDomain: '',
+    logoDomain: 'hexagon.com',
+    logoSrc: '/hexagon.png',
     logoText: 'HX',
     type: 'Full-time',
     duration: '2 yrs 7 mos',
@@ -218,7 +231,8 @@ export const experience = [
   },
   {
     org: 'CSIR - National Aerospace Laboratories (NAL)',
-    logoDomain: '',
+    logoDomain: 'nal.res.in',
+    logoSrc: '/csir-nal.png',
     logoText: 'NAL',
     type: 'Internship',
     duration: '8 mos',
@@ -248,22 +262,125 @@ export const education = [
 export const testimonials = [
   {
     quote:
-      'Ashish’s guidance on our AI architecture saved us months of trial and error. Clear, pragmatic, and deeply technical.',
-    name: 'Client Placeholder',
-    title: 'CTO, Startup',
+      'I have attended Ashish Prasad’s System Design master class. Clear & well-explained concepts — the instructor broke down complex system design principles in an easy-to-understand manner, with real-world relevance using Hotstar (JIO + Hotstar).',
+    name: 'Jagadeesh Manne',
+    title: 'System Design Master Class',
+    rating: 5,
+    source: 'Google Review',
   },
   {
     quote:
-      'An exceptional mentor — he breaks down complex ML concepts into things I could actually apply the next day.',
-    name: 'Student Placeholder',
-    title: 'Software Engineer',
+      'I loved Ashish Prasad Sir’s way of teaching. A smart person with a lot of knowledge in real-world system design, and an amazing way of teaching while asking questions to the students. Loved the webinar.',
+    name: 'Habeeb Hussain',
+    title: 'System Design Webinar',
+    rating: 5,
+    source: 'Google Review',
   },
   {
     quote:
-      'Reliable, senior, and easy to work with. The code reviews noticeably raised the quality of our whole team.',
-    name: 'Collaborator Placeholder',
-    title: 'Engineering Lead',
+      'I had a session with Ashish on Agentic AI. It was great to be part of the session — his knowledge and ability to make us understand the topics are great.',
+    name: 'Debdeep Ghosh',
+    title: 'Agentic AI Session',
+    rating: 5,
+    source: 'Google Review',
   },
+  {
+    quote:
+      'Ashish is a good trainer and good presenter. I attended the master class on microservices and felt really good to be a part of that session and learn a few new things.',
+    name: 'Ranjith Kumar',
+    title: 'Microservices Master Class',
+    rating: 5,
+    source: 'Google Review',
+  },
+  {
+    quote:
+      'Ashish is a great professional. He explained how JioCinema and streaming platforms work, in depth — simply awesome. Keep doing such webinars.',
+    name: 'Ravi Patel',
+    title: 'Video Streaming Webinar',
+    rating: 5,
+    source: 'Google Review',
+  },
+  {
+    quote:
+      'Amazing session by Ashish Prasad on system design of Twitter. Well understood, basic concepts well explained — a very effective learning approach.',
+    name: 'Kiran Patil',
+    title: 'System Design — Twitter',
+    rating: 5,
+    source: 'Google Review',
+  },
+  {
+    quote:
+      'Great session!! Ashish Prasad explained DSA concepts very clearly and clarified all questions.',
+    name: 'Vemuri Vyshnavi',
+    title: 'DSA Session',
+    rating: 5,
+    source: 'Google Review',
+  },
+  {
+    quote:
+      'Great session by Ashish Prasad. Attended the Hotstar live-streaming session — very informative, with a lot of brainstorming across all levels of experience.',
+    name: 'Manik Dhanush',
+    title: 'Live Streaming Session',
+    rating: 5,
+    source: 'Google Review',
+  },
+  {
+    quote:
+      'Great session by Ashish Prasad Sir — really enjoyed and learnt about video streaming. Thank you Ashish Prasad Sir and Bosscoder Academy.',
+    name: 'Salman Ahmad',
+    title: 'Video Streaming Session',
+    rating: 5,
+    source: 'Google Review',
+  },
+  {
+    quote:
+      'I really loved the way Ashish Prasad teaches in his class. Thanks — great job!',
+    name: 'Vivek Seth',
+    title: 'Live Class',
+    rating: 5,
+    source: 'Google Review',
+  },
+  {
+    quote:
+      'Really loved the presentation and gained knowledge about microservices from Ashish Prasad Sir.',
+    name: 'K R Prithviraj',
+    title: 'Microservices Session',
+    rating: 4,
+    source: 'Google Review',
+  },
+  {
+    quote:
+      'I attended the Linked List webinar presented by Ashish Prasad. I found it very informative and easy to understand, even though I had no prior knowledge of DSA.',
+    name: 'Bangara Raju Kottedi',
+    title: 'DSA / Linked List Webinar',
+    rating: 4,
+    source: 'Google Review',
+  },
+  {
+    quote:
+      'Thank you Ashish. Each of your sessions had so much to learn — every 1 hour of your course requires me to do 3–4 hours of self-learning to catch up.',
+    name: 'Hari Srivastava',
+    title: 'Course Participant',
+    rating: 5,
+    source: 'Session Feedback',
+  },
+  {
+    quote: 'Thank you Ashish, your sessions were very useful.',
+    name: 'Dharati Metra',
+    title: 'Course Participant',
+    rating: 5,
+    source: 'Session Feedback',
+  },
+]
+
+export const reviewShots = [
+  '/reviews/review-1.png',
+  '/reviews/review-2.png',
+  '/reviews/review-3.png',
+  '/reviews/review-4.png',
+  '/reviews/review-5.png',
+  '/reviews/review-6.png',
+  '/reviews/review-7.png',
 ]
 
 export const talks = [
@@ -274,9 +391,19 @@ export const talks = [
     date: '2026',
     description:
       'Keynote session unpacking how modern AI agents perceive, reason, decide, and act — and the maturity ladder from LLM + retrieval to fully autonomous, multi-agent systems.',
-    image: '/MLDS.jpg',
-    video: '/mlds-featured.mp4',
+    post: 'https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7442929044888940545?collapsed=1',
+    postHeight: 628,
     link: 'https://www.linkedin.com/posts/mlds2026-agenticai-machinelearning-ugcPost-7442929044888940545-aYbb/',
+  },
+  {
+    title: 'Applied NLP',
+    event: 'The Manipal Advantage — Industry Interactions · Online Manipal',
+    audience: 'Online Manipal learners & professionals',
+    date: '2025',
+    description:
+      'Industry Interactions webinar on Applied NLP — exploring how natural language processing powers real-world AI products, and what it takes to take models from research to production.',
+    image: '/manipal-nlp.png',
+    link: 'https://www.linkedin.com/posts/industryinteractionwebinar-onlinelearning-share-7320766448920932352-k64G/',
   },
 ]
 
@@ -292,6 +419,8 @@ export const bitsPilani = {
       title: 'Expert Talk',
       description:
         'The Path to Becoming a Full-Stack AI Expert — a guest expert session for BITS Pilani Digital learners.',
+      post: 'https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7408758467106107393?compact=1',
+      postHeight: 399,
       link: 'https://www.linkedin.com/posts/bitspilani-digital_the-path-to-becoming-a-full-stack-ai-expert-activity-7408758620152094720-mvUm',
     },
     {
@@ -363,17 +492,20 @@ export const masai = {
     '/MASAI/1777537858048.jpg',
     '/MASAI/1776193631175.jpg',
   ],
+  posts: [
+    'https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7454215035582566400',
+    'https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7455534213250015232',
+  ],
 }
 
 export const navLinks = [
   { label: 'About', href: '#about' },
   { label: 'Skills', href: '#skills' },
+  { label: 'Work', href: '#work' },
+  { label: 'Education', href: '#education' },
+  { label: 'Beyond Work', href: '#beyond' },
   { label: 'Services', href: '#services' },
   { label: 'Projects', href: '#projects' },
-  { label: 'Experience', href: '#experience' },
-  { label: 'Education', href: '#education' },
-  { label: 'BITS Pilani', href: '#bits-pilani' },
-  { label: 'Masai', href: '#masai' },
   { label: 'Speaking', href: '#speaking' },
   { label: 'Contact', href: '#contact' },
 ]

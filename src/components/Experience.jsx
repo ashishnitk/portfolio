@@ -15,7 +15,7 @@ export default function Experience() {
         {experience.map((company) => (
           <article key={company.org} className={styles.company}>
             <header className={styles.companyHead}>
-              <Logo name={company.org} domain={company.logoDomain} text={company.logoText} size={56} />
+              <Logo name={company.org} domain={company.logoDomain} text={company.logoText} src={company.logoSrc} size={56} />
               <div className={styles.companyMeta}>
                 <h3>{company.org}</h3>
                 <p>

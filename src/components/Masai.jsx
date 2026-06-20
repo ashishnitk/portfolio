@@ -55,6 +55,22 @@ export default function Masai() {
           ))}
         </div>
       ) : null}
+
+      {masai.posts?.length ? (
+        <div className={styles.posts}>
+          {masai.posts.map((src) => (
+            <iframe
+              key={src}
+              className={styles.post}
+              src={src}
+              title="Embedded LinkedIn post"
+              frameBorder="0"
+              allowFullScreen
+              loading="lazy"
+            />
+          ))}
+        </div>
+      ) : null}
     </Section>
   )
 }

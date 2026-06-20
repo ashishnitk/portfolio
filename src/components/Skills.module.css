@@ -12,9 +12,31 @@
   box-shadow: var(--shadow-sm);
 }
 
+.featured {
+  grid-column: 1 / -1;
+  border-color: rgba(124, 158, 255, 0.45);
+  background: linear-gradient(120deg, rgba(56, 122, 255, 0.12), rgba(124, 58, 237, 0.1) 80%);
+  box-shadow: 0 12px 30px -16px rgba(56, 122, 255, 0.55);
+}
+
 .card h3 {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
   margin-bottom: 0.9rem;
   color: var(--color-primary);
+}
+
+.coreTag {
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #c4d6ff;
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+  background: rgba(124, 158, 255, 0.2);
+  border: 1px solid rgba(124, 158, 255, 0.4);
 }
 
 .badges {
