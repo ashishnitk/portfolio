@@ -1,0 +1,47 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.1rem;
+}
+
+.card {
+  position: relative;
+  margin: 0;
+  padding: 2rem 1.6rem 1.4rem;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+}
+
+.mark {
+  position: absolute;
+  top: 0.4rem;
+  left: 1.2rem;
+  font-family: var(--font-display);
+  font-size: 3rem;
+  line-height: 1;
+  color: var(--color-primary);
+  opacity: 0.25;
+}
+
+.card blockquote {
+  margin: 0 0 1.2rem;
+  font-size: 0.98rem;
+  color: var(--color-ink-soft);
+}
+
+.card figcaption {
+  display: flex;
+  flex-direction: column;
+}
+
+.name {
+  font-weight: 600;
+  color: var(--color-ink);
+}
+
+.title {
+  font-size: 0.86rem;
+  color: var(--color-ink-muted);
+}

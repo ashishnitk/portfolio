@@ -1,0 +1,27 @@
+.section {
+  padding: clamp(3rem, 7vw, 5.5rem) 0;
+}
+
+.alt {
+  background: var(--color-surface-alt);
+}
+
+.header {
+  max-width: 640px;
+  margin: 0 auto clamp(2rem, 4vw, 3rem);
+  text-align: center;
+}
+
+.eyebrow {
+  margin: 0 0 0.5rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-primary);
+}
+
+.subtitle {
+  margin: 0.5rem 0 0;
+  color: var(--color-ink-muted);
+}
